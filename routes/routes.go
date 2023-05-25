@@ -11,5 +11,6 @@ func Setup(app *fiber.App) {
 	app.Get("/api/users", Controller.Users)
 	app.Get("/api/logout", Controller.Logout)
 	app.Use(Controller.AuthMiddleware)
-	app.Get("/api/getdrones", Controller.Drones)
+	app.Get("/api/drones", Controller.Drones)
+	app.Get("/api/drones/:id", Controller.IdDrones)
 }

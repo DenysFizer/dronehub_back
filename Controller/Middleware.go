@@ -7,11 +7,6 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func Drones(c *fiber.Ctx) error {
-	return c.JSON(fiber.Map{
-		"data": "all",
-	})
-}
 func AuthMiddleware(c *fiber.Ctx) error {
 
 	cookie := c.Cookies("jwt")
