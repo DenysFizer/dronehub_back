@@ -20,3 +20,9 @@ type Drone struct {
 	Vizor      bool   `json:"vizor"`
 	Imgpath    string `json:"imgpath"`
 }
+type Comments struct {
+	Id       uint   `json:"id"`
+	DroneId  uint   `json:"droneid"`
+	UserName string `json:"username"`
+	Comtext  string `json:"comtext"`
+}
